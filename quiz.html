@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML QUIZ</title>
+    <!-- <link rel="stylesheet" href="dark-mode.css" /> -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <!-- Font Awesome -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- MDB -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.4.1/mdb.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="quiz.css" />
+  </head>
+  <body class="bg-info">
+    <h1 class="heading-1 text-center p-3">Quiz App</h1>
+
+    <div class="container" id="showQuestion">
+      <div class="p-3 bg-white shadow rounded">
+        <p class="text-center">
+          Question <span id="currentQuestion" class="fs-3">5</span>/
+          <span id="totalQuestion">10</span>
+        </p>
+        <h2 class="text-center" id="question">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus ex
+          expedita iure quasi pariatur optio adipisci dolorem dicta, accusantium
+          dolorum, vel, corporis recusandae? Saepe debitis expedita consequatur
+          maxime, minima minus?
+        </h2>
+      </div>
+      <div>
+        <div id="answerParent" class="row py-5">
+          <div class="col-md-4">
+            <div class="py-2">
+              <button class="btn btn-dark fs-4 rounded-pill w-100">
+                option1
+              </button>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="py-2">
+              <button class="btn btn-dark fs-4 rounded-pill w-100">
+                option1
+              </button>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="py-2">
+              <button class="btn btn-dark fs-4 rounded-pill w-100">
+                option1
+              </button>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="py-2">
+              <button class="btn btn-dark fs-4 rounded-pill w-100">
+                option1
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="p-3 text-center">
+          <button onclick="nextQuestion()" class="btn btn-dark">NEXT</button>
+        </div>
+      </div>
+    </div>
+    <div style="display: none" id="load " class="bg-white shadow rounded">
+      <img
+        src="https://cdn.dribbble.com/users/806947/screenshots/5030082/loader_gif_1.gif"
+        alt=""
+        width="50%"
+      />
+    </div>
+
+    <script type="module" src="quiz.js"></script>
+  </body>
+</html>

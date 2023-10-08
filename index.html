@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="quiz.css" />
+    <title>Conditional Navigation</title>
+  </head>
+  <body class="bg-info">
+    <h1 class="text-center">ADD your key password</h1>
+
+    <p class="text-center mt-2 fs-5">welcome go to the</p>
+
+    password = 10
+
+    <button class="btn custom-btn">
+      <a href="quiz.html">attempt Quiz</a>
+    </button>
+
+    <script>
+      //   function gotoquiz() {
+      //     window.location.href = "quiz.html";
+      //   }
+
+      // JavaScript code goes here
+      // Get user input
+      var userInput = parseInt(
+        prompt("Enter correct value to go a admin pannel  ")
+      );
+
+      // Define a threshold
+      var threshold = 10;
+
+      // Check if the input is greater than the threshold
+      if (userInput == threshold) {
+        window.location.href = "addquiz.html";
+        // Here, you can add code to navigate to the next page using window.location or other methods.
+      } else {
+        alert("Staying on this page.");
+        // Here, you can continue with the current page's functionality.
+      }
+    </script>
+  </body>
+</html>
